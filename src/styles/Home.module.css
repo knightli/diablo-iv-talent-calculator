@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -9,6 +9,7 @@
 
 .description {
   display: inherit;
+  flex-direction: column;
   justify-content: inherit;
   align-items: inherit;
   font-size: 0.85rem;
@@ -27,11 +28,11 @@
 
 .description p {
   position: relative;
-  margin: 0;
+  margin: 1rem;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  /* background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius); */
 }
 
 .code {
@@ -86,6 +87,7 @@
   width: 480px;
   height: 360px;
   margin-left: -400px;
+  z-index: -1;
 }
 
 .center::after {
@@ -97,7 +99,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +127,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -276,3 +278,5 @@
     transform: rotate(0deg);
   }
 }
+
+/*========= CUSTOM DESIGN /*=========*/
